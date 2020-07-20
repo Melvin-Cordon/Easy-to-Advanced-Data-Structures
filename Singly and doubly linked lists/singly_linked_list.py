@@ -34,6 +34,26 @@ class SlinkedList():
             curr_node = curr_node.next
         curr_node.next = Node(val, next = None)
 
+    def remove_node(self, val):
+        curr_node= self.head
+        if (curr_node is not None):
+            if (curr_node.data == val):
+                self.head = curr_node.next
+                curr_node = None
+                return
+
+        while (curr_node is not None):
+            if curr_node.data == val:
+                break
+            prev_node = curr_node
+            curr_node = curr_node.next
+
+        if (curr_node == None):
+            return
+
+        prev_node.next = curr_node.next
+        curr_node = None
+
 
 list = SlinkedList()
 list.head = Node('Monday')
@@ -50,5 +70,9 @@ list.printlist()
 print("\n")
 
 list.insert_between(list.head.next,'6')
+list.printlist()
+print("\n")
+
+list.remove_node('6')
 list.printlist()
 print("\n")
