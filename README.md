@@ -17,3 +17,7 @@ This repository contains notes and code implementing everything I have learned f
 * AVL trees
 * Binary Indexed trees
 * Sparse tables
+
+## Singly and doubly linked lists
+
+![Image of Linked List](\Singly and doubly linked lists)
