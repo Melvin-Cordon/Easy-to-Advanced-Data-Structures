@@ -19,5 +19,4 @@ This repository contains notes and code implementing everything I have learned f
 * Sparse tables
 
 ## Singly and doubly linked lists
-
-![Image of Linked List](Images\LinkedListDiagram.png)
+Images\LinkedListDiagram.png
