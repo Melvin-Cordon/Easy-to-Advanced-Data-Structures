@@ -19,4 +19,4 @@ This repository contains notes and code implementing everything I have learned f
 * Sparse tables
 
 ## Singly and doubly linked lists
-![image.png](Images\LinkedListDiagram.png)
+![image.png](https://github.com/Melvin-Cordon/Easy-to-Advanced-Data-Structures/blob/master/Images/LinkedListDiagram.png)
