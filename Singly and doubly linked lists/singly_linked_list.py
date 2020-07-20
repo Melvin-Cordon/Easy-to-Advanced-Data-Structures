@@ -55,24 +55,28 @@ class SlinkedList():
         curr_node = None
 
 
+# creating a linked list and intializing the head.
 list = SlinkedList()
 list.head = Node('Monday')
-list.head.next = Node('Tuesday')
 list.printlist()
 print("\n")
 
+#  Inserting a new node at the head of the linked list
 list.insert_beginning('Sunday')
 list.printlist()
 print("\n")
 
-list.insert_end('Wednesday')
+# Inserting a new node at the end of the linked list
+list.insert_end('Tuesday')
 list.printlist()
 print("\n")
 
+# inserting a new node in inserting inbetween two nodes
 list.insert_between(list.head.next,'6')
 list.printlist()
 print("\n")
 
+# removing a node with a specific value
 list.remove_node('6')
 list.printlist()
 print("\n")
