@@ -20,4 +20,4 @@ This repository contains notes and code implementing everything I have learned f
 
 ## Singly and doubly linked lists
 
-![Image of Linked List](\Singly and doubly linked lists\LinkedListDiagram.png)
+![Image of Linked List](Images\LinkedListDiagram.png)
