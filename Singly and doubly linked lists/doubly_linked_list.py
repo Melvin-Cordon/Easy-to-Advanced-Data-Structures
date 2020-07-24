@@ -56,14 +56,15 @@ class SlinkedList():
         while (curr_node is not None):
             if curr_node.data == val:
                 break
-            prev_node = curr_node
             curr_node = curr_node.next
 
         if (curr_node == None):
             return
 
-        prev_node.next = curr_node.next
+        curr_node.prev.next = curr_node.next
+        curr_node.next.prev = curr_node.prev
         curr_node = None
+
 
 
 # creating a linked list and intializing the head.
@@ -97,3 +98,6 @@ print("\n")
 
 list.printlistb()
 print("\n")
+
+
+""" need to fix removing nodes function """
