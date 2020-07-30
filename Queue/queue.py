@@ -1,4 +1,4 @@
-""" Stack Data Structure in Python """
+""" Queue Data Structure in Python """
 
 class Node():
     def __init__(self,data = None, next = None):
