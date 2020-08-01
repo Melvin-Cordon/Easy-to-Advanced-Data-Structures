@@ -16,6 +16,9 @@ class queueD():
             print(curr_node.data)
             curr_node = curr_node.next
 
+    def peek(self):
+        print(self.front.data)
+
     def queue(self, val):
         if self.front == None:
             self.front = Node(val)
@@ -51,3 +54,5 @@ line.dequeue()
 line.dequeue()
 line.printlist()
 print('\n')
+
+line.peek()
