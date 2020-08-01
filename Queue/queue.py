@@ -33,6 +33,26 @@ class queueD():
         self.front = curr_node.next
         curr_node = None
 
+    def remove(self, val):
+        curr_node= self.front
+        if (curr_node is not None):
+            if (curr_node.data == val):
+                self.front = curr_node.next
+                curr_node = None
+                return
+
+        while (curr_node is not None):
+            if curr_node.data == val:
+                break
+            prev_node = curr_node
+            curr_node = curr_node.next
+
+        if (curr_node == None):
+            return
+
+        prev_node.next = curr_node.next
+        curr_node = None
+
 line = queueD()
 
 line.queue("1")
@@ -56,3 +76,12 @@ line.printlist()
 print('\n')
 
 line.peek()
+print('\n')
+
+line.queue("3")
+line.printlist()
+print('\n')
+
+line.remove("5")
+line.printlist()
+print('\n')
